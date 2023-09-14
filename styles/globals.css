@@ -48,12 +48,12 @@
     background-image: radial-gradient(at 27% 37%,
             hsla(215, 98%, 61%, 1) 0px,
             transparent 0%),
-        radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
-        radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+        radial-gradient(at 97% 21%, rgb(114, 254, 254) 0px, transparent 50%),
+        radial-gradient(at 52% 99%, rgb(58, 146, 253) 0px, transparent 50%),
         radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
-        radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 97% 96%, rgb(187, 149, 228) 0px, transparent 50%),
         radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
-        radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+        radial-gradient(at 79% 53%, rgb(186, 165, 238) 0px, transparent 50%);
     position: absolute;
     content: "";
     width: 100%;
@@ -75,20 +75,20 @@
         @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
     }
 
-    .black_btn {
-        @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+    .blue_btn {
+        @apply rounded-full border border-cyan-500 bg-cyan-500 py-1.5 px-5 text-white transition-all hover:bg-white hover:text-cyan-500 text-center text-sm font-inter flex items-center justify-center;
     }
 
     .outline_btn {
-        @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
+        @apply rounded-full border border-cyan-500 bg-transparent py-1.5 px-5 text-cyan-500 transition-all hover:bg-cyan-500 hover:text-white text-center text-sm font-inter flex items-center justify-center;
     }
 
     .head_text {
-        @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+        @apply mt-5 text-5xl font-extrabold leading-[1.15] text-gray-800 sm:text-6xl;
     }
 
-    .orange_gradient {
-        @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+    .blue_gradient {
+        @apply bg-gradient-to-r from-blue-500 via-cyan-600 to-purple-500 bg-clip-text text-transparent;
     }
 
     .green_gradient {
@@ -135,15 +135,15 @@
 
     /* Nav Component */
     .logo_text {
-        @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+        @apply max-sm:hidden font-inter font-semibold text-xl text-gray-800 tracking-wide;
     }
 
     .dropdown {
-        @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+        @apply absolute right-4 top-10 mt-3 w-56 p-5 rounded-3xl bg-gray-300 bg-opacity-95 min-w-[210px] flex flex-col gap-2 justify-end items-end;
     }
 
     .dropdown_link {
-        @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
+        @apply text-sm font-inter font-medium;
     }
 
     /* PromptCard Component */
